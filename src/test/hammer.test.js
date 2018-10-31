@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { calculate_body, calculate_tail, calculate_wick, calculate_total_length } = require('./../hammer/hammer');
+const { calculate_body, calculate_tail, calculate_wick, calculate_total_length, find_hammer_data } = require('./../hammer/hammer');
 
 describe("test cases for hammer.js", function () {
 
@@ -139,4 +139,27 @@ describe("test cases for hammer.js", function () {
 
     })
 
+    describe("test cases for hammer_data() function", function () {
+        let data =
+            [
+                {
+                    date: 'Date',
+                    open: 'open',
+                    high: 'high',
+                    low: 'low',
+                    close: 'close',
+                    volume: 'volume'
+                },
+                {
+                    date: '2000-01-03',
+                    open: '244.141006',
+                    high: '244.143997',
+                    low: '244.141006',
+                    close: '244.143997',
+                    volume: '328768'
+                }
+            ]
+
+        assert(find_hammer_data(data), find_hammer_data(data))
+    })
 })
