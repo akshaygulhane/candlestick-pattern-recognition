@@ -10,4 +10,6 @@ Node.js v10
 `npm test`
 
 ### To See Code Coverage
-`npm coverage`
+`npm run coverage`
+
+View the report at /coverage/index.html
