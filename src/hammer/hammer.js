@@ -60,5 +60,6 @@ module.exports = {
     calculate_body,
     find_hammer,
     calculate_wick,
-    calculate_tail
+    calculate_tail,
+    calculate_total_length
 }
