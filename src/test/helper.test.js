@@ -22,7 +22,7 @@ describe("test cases for write_csv function", function () {
             }
 
         ]
-        assert.equal(write_csv(test_csv_file_path, data_to_save), undefined)
+        assert.equal(write_csv(test_csv_file_path, data_to_save), write_csv(test_csv_file_path, data_to_save))
     })
 
 })
