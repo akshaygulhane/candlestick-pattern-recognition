@@ -25,10 +25,6 @@ function calculate_tail(candle_stick) {
     return Math.min(candle_stick.open, candle_stick.close) - candle_stick.low
 }
 
-function find_invalid_stick(candle_stick) {
-    return candle_stick.open < candle_stick.close;
-}
-
 module.exports = {
 
     find_hammer_data: function (parsed_data) {
