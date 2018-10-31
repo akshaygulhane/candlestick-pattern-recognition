@@ -5,8 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha src/test/**/*.test.js"
+    "test": "mocha src/test/**/*.test.js",
+    "coverage": "nyc --reporter=html --reporter=text npm test"
   },
   "author": "Akshay Gulhane",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nyc": "^13.1.0"
+  }
 }
