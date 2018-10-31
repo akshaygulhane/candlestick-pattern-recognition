@@ -1,0 +1,12 @@
+{
+  "name": "candlestick-pattern-recognition",
+  "version": "1.0.0",
+  "description": "Solution to the coding task by LearnApp.co",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha src/test/**/*.test.js"
+  },
+  "author": "Akshay Gulhane",
+  "license": "MIT"
+}
